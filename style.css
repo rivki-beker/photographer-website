@@ -1,0 +1,2038 @@
+/*דף הבית וכללי--------------------------------------------------------------------------------------------*/
+body{
+    font-family: 'special-font';
+    margin: 0;
+}
+nav img{
+    height: 80px;
+    position: fixed;
+    left: 2vw;
+    top: 1vw;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 1vw;
+    font-size: 25px;
+    padding: 1vw;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+nav a:hover{
+    border-bottom: 5px solid rgb(0, 168, 180);
+}
+.page-button{
+    border-bottom: 5px solid rgb(0, 168, 180) !important;
+}
+nav a:active{
+    border-bottom: 5px solid rgb(211, 84, 101);
+}
+nav{
+    padding-right: 2vw;
+    background-color:rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+.menu-link-conteiner{
+    position: relative;
+    top: 2vw;
+    text-align: center;
+    height: 0;
+}
+.menu-link-conteiner .menu-button{
+    border-bottom: none;
+    margin: 0;
+    padding: 2vw;
+    padding-bottom: 1vw;
+}
+.menu-link-conteiner:hover .link-conteiner{
+    display: flex;
+    animation: top .5s ease-out;
+}
+.menu-link-conteiner:hover .wrapper-link-conteiner{
+    display: block;
+}
+.regular-nav .link-conteiner{
+    left: 1vw;
+}
+.link-conteiner{
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 2px 4px 8px 2px rgba(33, 33, 33, 0.3);
+    display: none;
+}
+.link-conteiner>*{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(88, 88, 88);
+    margin: 0;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    font-size: 20px;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    font-family: 'regular-font';
+    text-shadow: none;
+}
+.small-nav{
+    display: none;
+    padding-right: 0;
+}
+.small-nav .link-conteiner{
+    height: fit-content;
+    top: 0;
+}
+.wrapper-link-conteiner{
+    position: absolute;
+    width: 120px;
+    top: 4.5vh;
+    height: 400px;
+    overflow: hidden;
+    display: none;
+}
+.small-nav .wrapper-link-conteiner{
+    top: 60px;
+    width: 100vw;
+}
+.small-nav .link-conteiner>*{
+    width: 93vw;
+    padding: 2.5vw;
+    padding-right: 7vw;
+    font-size: 23px;
+}
+.small-nav .menu-link-conteiner{
+    top: 3vw;
+    text-align: right;
+    width: 100vw;
+}
+.small-nav .menu-button{
+    writing-mode: vertical-rl; 
+    font-size: 35px;
+    color:rgb(0, 168, 180) ;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    padding: 4vw;
+    padding-top: 2vw;
+}
+.small-nav .menu-button:hover{
+    color:white ;
+}
+.link-conteiner a:hover{
+    background-color:rgb(0, 168, 180) ;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    color: white;
+}
+.link-conteiner a:active{
+    background-color:rgb(211, 84, 101) ;
+}
+.background-img-div{
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-header{
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(230, 230, 233);
+}
+.home-header>*{
+    width: 100%;
+    position: absolute;
+    top: -6vw;
+    opacity: 0;
+}
+.home-header.background-img-div :nth-child(1){
+    animation: merge 30s infinite;
+}
+.home-header.background-img-div :nth-child(2){
+    animation: merge 30s 3s infinite;
+}
+.home-header.background-img-div :nth-child(3){
+    animation: merge 30s 6s infinite;
+}
+.home-header.background-img-div :nth-child(4){
+    animation: merge 30s 9s infinite;
+}
+.home-header.background-img-div :nth-child(5){
+    animation: merge 30s 12s infinite;
+}
+.home-header.background-img-div :nth-child(6){
+    animation: merge 30s 15s infinite;
+}
+.home-header.background-img-div :nth-child(7){
+    animation: merge 30s 18s infinite;
+}
+.home-header.background-img-div :nth-child(8){
+    animation: merge 30s 21s infinite;
+}
+.home-header.background-img-div :nth-child(9){
+    animation: merge 30s 24s infinite;
+}
+.home-header.background-img-div :nth-child(10){
+    animation: merge 30s 27s infinite;
+}
+.home-main{
+    position: relative;
+    text-align: center;
+    direction: rtl;
+    height: 70vh;
+    line-height: 2;
+    background-color: rgb(230, 230, 233);
+    padding: 15vh;
+    overflow: hidden;
+}
+.home-main h1{
+    color:rgb(0, 168, 180) ;
+}
+.home-main :nth-child(2){
+    font-size: 28px;
+    font-family: 'regular-font';
+    color: rgb(81, 81, 81);
+}
+.home-main :nth-child(3){
+    font-size: 30px;
+    margin-bottom: 10vh;
+    font-family: 'regular-font';
+    color: rgb(211, 84, 101);
+}
+.home-main img{
+    width: 30vw;
+    position: absolute;
+    bottom: 15vh;
+    animation: run 5s infinite cubic-bezier(0.32, 0.56, 0.64, 0.26);
+}
+.clear-link{
+    border: 4px solid white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    background-color:rgba(0, 0, 0, 0.2) ;
+}
+.clear-link:hover{
+    background-color:rgb(0, 168, 180) ;
+}
+.clear-link:active{
+    background-color:rgb(211, 84, 101) ;
+}
+.chalake{
+    background: url("חלאקה/gate1.jpg") fixed;
+}
+.children{
+    background: url("ילדים/gate1.jpg") fixed;
+    background-position: top !important;
+}
+.baby{
+    background: url("בייבי/gate1.jpg") fixed;
+}
+.family{
+    background: url("משפחה/gate1.jpg") fixed;
+}
+.purim{
+    background: url("פורים/gate1.jpg") fixed;
+}
+footer{
+    display: flex;
+    background-color: rgb(220, 220, 224);
+    flex-flow: column wrap;
+    height: 240px;
+    justify-content: center;
+    align-content: center;
+    padding: 3vw;
+}
+footer img{
+    height: 100px;
+    width: fit-content;
+    margin: 2.5vw;
+    margin-left: 4vw;
+}
+footer p{
+    font-family: 'regular-font';
+    font-size: 25px;
+    color: rgb(107, 107, 107);
+    direction: rtl;
+    margin: 0.4em;
+}
+footer :nth-child(1){
+    font-size: 23px;
+    margin-right: 11vw;
+    line-height: 1.6;
+    margin-top: 2vw;
+}
+footer :nth-child(2){
+    margin-top: 0;
+    margin-right: 10vw;
+    margin-bottom: 2vw;
+    padding: 1vw;
+    position: sticky;
+    bottom: 0;
+}
+footer .phone{
+    margin-top: 3vw;
+}
+.phone::before{
+    content: url(icons/phone.png);
+    margin-left: 10px;
+}
+footer .email{
+    margin-bottom: 3vw;
+}
+.email::before{
+    content: url(icons/email.png);
+    margin-left: 10px;
+}
+/*גלריות--------------------------------------------------------------------------------------------*/
+.gallery-header{
+    background: url(header/gallery.jpg) fixed;
+    height: 80vh;
+}
+.gallery-conteiner{
+    height: 100vh;
+    display: grid;
+    grid-gap :15px;
+    grid-template-rows: 1fr 30vh 30vh 1fr;
+    grid-template-columns: 1fr 20vw 20vw 20vw 1fr;
+}
+.gallery-conteiner> div{
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 3px 9px 0 rgba(33, 33, 33, 0.3);
+    opacity: 1;
+    transition: .5s ease;
+    position: relative;
+}
+.gallery-conteiner>* div{
+    transition: .5s ease;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gallery-conteiner>* div:hover{
+    opacity: 1;
+}
+.gallery-conteiner> :nth-child(1){
+    grid-row: 2;
+    grid-column: 2;
+    background-image: url(ילדים/gate2.jpg);
+}
+.gallery-conteiner> :nth-child(2){
+    grid-row: 2;
+    grid-column: 3;
+    direction: rtl;
+    font-size: 35px;
+    align-self: center;
+    justify-self: center;
+    color:rgb(0, 168, 180);
+    font-weight: bold;
+    padding: 2vw;
+}
+.gallery-conteiner> :nth-child(3){
+    grid-row: 2;
+    grid-column: 4;
+    background-image: url(חלאקה/gate2.jpg);
+}
+.gallery-conteiner> :nth-child(4){
+    grid-row: 3;
+    grid-column: 2;
+    background-image: url(פורים/gate2.jpg);
+}
+.gallery-conteiner> :nth-child(5){
+    grid-row: 3;
+    grid-column: 3;
+    background-image: url(משפחה/gate2.jpg);
+}
+.gallery-conteiner> :nth-child(6){
+    grid-row: 3;
+    grid-column: 4;
+    background-image: url(בייבי/gate2.jpg);
+}
+.gallery-conteiner>* div a{
+    background-color:rgb(0, 168, 180) ;
+    width: 60%;
+    font-size: 27px;
+    padding: 8px;
+    border: 3px solid white;
+    text-decoration: none;
+    color: white;
+}
+.gallery-conteiner>* div a:hover{
+    background-color:rgb(211, 84, 101) ;
+}
+.collage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
+}
+.collage span{
+    height: 40vh;
+    background-size: cover;
+    margin: 8px;
+    background-position: center;
+}
+.collage span:hover{
+    animation: grow 1s ease-out;
+    background-size: 120%;
+}
+.details h3{
+    margin-top: 0;
+    margin-right: 17vw;
+    font-size: 50px;
+    font-weight: normal;
+    padding-top: 70px;
+    color: white;
+}
+.details{
+    height: 200px;
+    direction: rtl;
+    background-color: rgb(211, 84, 101);
+}
+.page-name{
+    position: relative;
+    height: 20vh;
+    overflow: hidden;
+}
+.page-name h3{
+    position: absolute;
+    padding-top: 6vh;
+    animation: right 2s ease;
+}
+.page-name :nth-child(2){
+    margin-right: 20vw;
+}
+.gallery-details{
+    height:  240px;
+}
+.gallery-details h3{
+    padding-top: 150px;
+    color: rgb(0, 168, 180);
+}
+/*ילדים---------------------------------------------------------------------------------------------------*/
+.children-collage :nth-child(1){
+    background-image:url(ילדים/1.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(2){
+    background-image:url(ילדים/2.JPG);
+    width:32vw;
+}
+.children-collage :nth-child(3){
+    background-image:url(ילדים/3.JPG);
+    width:28vw;
+}
+.children-collage :nth-child(4){
+    background-image:url(ילדים/4.JPG);
+    width:28vw;
+}
+.children-collage :nth-child(5){
+    background-image:url(ילדים/5.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(6){
+    background-image:url(ילדים/6.JPG);
+    width:32vw;
+}
+.children-collage :nth-child(7){
+    background-image:url(ילדים/7.JPG);
+    width:31vw;
+}
+.children-collage :nth-child(8){
+    background-image:url(ילדים/8.JPG);
+    width:31vw;
+}
+.children-collage :nth-child(9){
+    background-image:url(ילדים/9.JPG);
+    width:28vw;
+}
+.children-collage :nth-child(10){
+    background-image:url(ילדים/10.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(11){
+    background-image:url(ילדים/11.JPG);
+    width:31vw;
+}
+.children-collage :nth-child(12){
+    background-image:url(ילדים/12.JPG);
+    width:29vw;
+}
+.children-collage :nth-child(13){
+    background-image:url(ילדים/13.JPG);
+    width:28vw;
+}
+.children-collage :nth-child(14){
+    background-image:url(ילדים/14.jpg);
+    width:15vw;
+}
+.children-collage :nth-child(15){
+    background-image:url(ילדים/15.JPG);
+    width:16vw;
+}
+.children-collage :nth-child(16){
+    background-image:url(ילדים/16.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(17){
+    background-image:url(ילדים/17.JPG);
+    width:28vw;
+}
+.children-collage :nth-child(18){
+    background-image:url(ילדים/18.JPG);
+    width:29vw;
+}
+.children-collage :nth-child(19){
+    background-image:url(ילדים/19.JPG);
+    width:33vw;
+}
+.children-collage :nth-child(20){
+    background-image:url(ילדים/20.JPG);
+    width:29vw;
+}
+.children-collage :nth-child(21){
+    background-image:url(ילדים/21.JPG);
+    width:31vw;
+}
+.children-collage :nth-child(22){
+    background-image:url(ילדים/22.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(23){
+    background-image:url(ילדים/23.JPG);
+    width:27vw;
+}
+.children-collage :nth-child(24){
+    background-image:url(ילדים/24.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(25){
+    background-image:url(ילדים/25.JPG);
+    width:33vw;
+}
+.children-collage :nth-child(26){
+    background-image:url(ילדים/26.JPG);
+    width:28vw;
+}
+.children-collage :nth-child(27){
+    background-image:url(ילדים/27.JPG);
+    width:17vw;
+}
+.children-collage :nth-child(28){
+    background-image:url(ילדים/28.JPG);
+    width:16vw;
+}
+.children-collage :nth-child(29){
+    background-image:url(ילדים/29.JPG);
+    width:28vw;
+}
+.children-collage :nth-child(30){
+    background-image:url(ילדים/30.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(31){
+    background-image:url(ילדים/31.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(32){
+    background-image: url(ילדים/32.jpg);
+    width: 30vw;
+}
+.children-collage :nth-child(33){
+    background-image:url(ילדים/33.JPG);
+    width:29vw;
+}
+.children-collage :nth-child(34){
+    background-image:url(ילדים/34.JPG);
+    width:32vw;
+}
+.children-collage :nth-child(35){
+    background-image:url(ילדים/35.JPG);
+    width:29vw;
+}
+.children-collage :nth-child(36){
+    background-image:url(ילדים/36.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(37){
+    background-image:url(ילדים/37.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(38){
+    background-image:url(ילדים/38.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(39){
+    background-image:url(ילדים/39.JPG);
+    width:29vw;
+}
+.children-collage :nth-child(40){
+    background-image:url(ילדים/40.JPG);
+    width:29vw;
+}
+.children-collage :nth-child(41){
+    background-image:url(ילדים/41.JPG);
+    width:32vw;
+}
+.children-collage :nth-child(42){
+    background-image:url(ילדים/42.JPG);
+    width:30vw;
+}
+.children-collage :nth-child(43){
+    background-image:url(ילדים/43.JPG);
+    width:29vw;
+}
+.children-collage :nth-child(44){
+    background-image:url(ילדים/44.JPG);
+    width:31vw;
+}
+/*פורים--------------------------------------------------------------------------------------------------*/
+.purim-collage :nth-child(1){
+    background-image:url(פורים/1.JPG);
+    width:20vw;
+}
+.purim-collage :nth-child(2){
+    background-image:url(פורים/2.JPG);
+    width:35vw;
+}
+.purim-collage :nth-child(3){
+    background-image:url(פורים/3.JPG);
+    width:35vw;
+}
+.purim-collage :nth-child(4){
+    background-image:url(פורים/4.JPG);
+    width:26vw;
+}
+.purim-collage :nth-child(5){
+    background-image:url(פורים/5.JPG);
+    width:42vw;
+}
+.purim-collage :nth-child(6){
+    background-image:url(פורים/6.JPG);
+    width:22vw;
+}
+.purim-collage :nth-child(7){
+    background-image:url(פורים/7.JPG);
+    width:38vw;
+}
+.purim-collage :nth-child(8){
+    background-image:url(פורים/8.JPG);
+    width:17vw;
+}
+.purim-collage :nth-child(9){
+    background-image:url(פורים/9.JPG);
+    width:35vw;
+}
+.purim-collage :nth-child(10){
+    background-image:url(פורים/10.JPG);
+    width:39vw;
+}
+.purim-collage :nth-child(11){
+    background-image:url(פורים/11.JPG);
+    width:16vw;
+}
+.purim-collage :nth-child(12){
+    background-image:url(פורים/12.JPG);
+    width:17vw;
+}
+.purim-collage :nth-child(13){
+    background-image:url(פורים/13.JPG);
+    width:17vw;
+}
+.purim-collage :nth-child(14){
+    background-image:url(פורים/14.JPG);
+    width:20vw;
+}
+.purim-collage :nth-child(15){
+    background-image:url(פורים/15.JPG);
+    width:30vw;
+}
+.purim-collage :nth-child(16){
+    background-image:url(פורים/16.JPG);
+    width:24vw;
+}
+.purim-collage :nth-child(17){
+    background-image:url(פורים/17.JPG);
+    width:15vw;
+}
+.purim-collage :nth-child(18){
+    background-image:url(פורים/18.JPG);
+    width:35vw;
+}
+.purim-collage :nth-child(19){
+    background-image:url(פורים/19.JPG);
+    width:17vw;
+}
+.purim-collage :nth-child(20){
+    background-image:url(פורים/20.JPG);
+    width:38vw;
+}
+.purim-collage :nth-child(21){
+    background-image:url(פורים/21.JPG);
+    width:18vw;
+}
+.purim-collage :nth-child(22){
+    background-image:url(פורים/22.JPG);
+    width:15vw;
+}
+.purim-collage :nth-child(23){
+    background-image:url(פורים/23.JPG);
+    width:30vw;
+}
+.purim-collage :nth-child(24){
+    background-image:url(פורים/24.JPG);
+    width:26vw;
+}
+.purim-collage :nth-child(25){
+    background-image:url(פורים/25.JPG);
+    width:32vw;
+}
+.purim-collage :nth-child(26){
+    background-image:url(פורים/26.JPG);
+    width:28vw;
+}
+.purim-collage :nth-child(27){
+    background-image:url(פורים/27.JPG);
+    width:30vw;
+}
+.purim-collage :nth-child(28){
+    background-image:url(פורים/28.JPG);
+    width:23vw;
+}
+.purim-collage :nth-child(29){
+    background-image:url(פורים/29.JPG);
+    width:33vw;
+}
+.purim-collage :nth-child(30){
+    background-image:url(פורים/30.JPG);
+    width:34vw;
+}
+.purim-collage :nth-child(31){
+    background-image:url(פורים/31.JPG);
+    width:37vw;
+}
+.purim-collage :nth-child(32){
+    background-image:url(פורים/32.JPG);
+    width:37vw;
+}
+.purim-collage :nth-child(33){
+    background-image:url(פורים/33.JPG);
+    width:16vw;
+}
+/*בייבי---------------------------------------------------------------------------------------------------*/
+.baby-collage :nth-child(1){
+    background-image:url(בייבי/1.jpg);
+    width:27vw;
+}
+.baby-collage :nth-child(2){
+    background-image:url(בייבי/2.jpg);
+    width:30vw;
+}
+.baby-collage :nth-child(3){
+    background-image:url(בייבי/3.jpg);
+    width:33vw;
+}
+.baby-collage :nth-child(4){
+    background-image:url(בייבי/4.jpg);
+    width:25vw;
+}
+.baby-collage :nth-child(5){
+    background-image:url(בייבי/5.jpg);
+    width:35vw;
+}
+.baby-collage :nth-child(6){
+    background-image:url(בייבי/6.jpg);
+    width:30vw;
+}
+.baby-collage :nth-child(7){
+    background-image:url(בייבי/7.jpg);
+    width:30vw;
+}
+.baby-collage :nth-child(8){
+    background-image:url(בייבי/8.jpg);
+    width:28vw;
+}
+.baby-collage :nth-child(9){
+    background-image:url(בייבי/9.jpg);
+    width:32vw;
+}
+.baby-collage :nth-child(10){
+    background-image:url(בייבי/10.jpg);
+    width:32vw;
+}
+.baby-collage :nth-child(11){
+    background-image:url(בייבי/11.jpg);
+    width:15vw;
+}
+.baby-collage :nth-child(12){
+    background-image:url(בייבי/12.jpg);
+    width:12vw;
+}
+.baby-collage :nth-child(13){
+    background-image:url(בייבי/13.jpg);
+    width:30vw;
+}
+.baby-collage :nth-child(14){
+    background-image:url(בייבי/14.jpg);
+    width:30vw;
+}
+.baby-collage :nth-child(15){
+    background-image:url(בייבי/15.jpg);
+    width:26vw;
+}
+.baby-collage :nth-child(16){   
+    background-image:url(בייבי/16.jpg);
+    width:34vw;
+}
+.baby-collage :nth-child(17){
+    background-image:url(בייבי/17.jpg);
+    width:34vw;
+}
+.baby-collage :nth-child(18){
+    background-image:url(בייבי/18.jpg);
+    width:22vw;
+}
+.baby-collage :nth-child(19){
+    background-image:url(בייבי/19.jpg);
+    width:34vw;
+}
+.baby-collage :nth-child(20){
+    background-image:url(בייבי/20.jpg);
+    width:32vw;
+}
+.baby-collage :nth-child(21){
+    background-image:url(בייבי/21.jpg);
+    width:29vw;
+}
+.baby-collage :nth-child(22){
+    background-image:url(בייבי/22.jpg);
+    width:29vw;
+}
+.baby-collage :nth-child(23){
+    background-image:url(בייבי/23.jpg);
+    width:33vw;
+}
+.baby-collage :nth-child(24){
+    background-image:url(בייבי/24.jpg);
+    width:25vw;
+}
+.baby-collage :nth-child(25){
+    background-image:url(בייבי/25.jpg);
+    width:32vw;
+}
+.baby-collage :nth-child(26){
+    background-image:url(בייבי/26.jpg);
+    width:30vw;
+}
+.baby-collage :nth-child(27){
+    background-image:url(בייבי/27.jpg);
+    width:33vw;
+}
+.baby-collage :nth-child(28){
+    background-image:url(בייבי/28.jpg);
+    width:27vw;
+}
+.baby-collage :nth-child(29){
+    background-image:url(בייבי/29.jpg);
+    width:30vw;
+}
+.baby-collage :nth-child(30){
+    background-image:url(בייבי/30.jpg);
+    width:25vw;
+}
+.baby-collage :nth-child(31){
+    background-image:url(בייבי/31.jpg);
+    width:35vw;
+}
+.baby-collage :nth-child(32){
+    background-image:url(בייבי/32.jpg);
+    width:33vw;
+}
+.baby-collage :nth-child(33){
+    background-image:url(בייבי/33.jpg);
+    width:27vw;
+}
+.baby-collage :nth-child(34){
+    background-image:url(בייבי/34.jpg);
+    width:30vw;
+}
+/*משפחה----------------------------------------------------------------------------------------------------*/
+.family-collage :nth-child(1){
+    background-image:url(משפחה/1.jpg);
+    width:35vw;
+}
+.family-collage :nth-child(2){
+    background-image:url(משפחה/2.jpg);
+    width:15vw;
+}
+.family-collage :nth-child(3){
+    background-image:url(משפחה/3.jpg);
+    width:40vw;
+}
+.family-collage :nth-child(4){
+    background-image:url(משפחה/4.jpg);
+    width:32vw;
+}
+.family-collage :nth-child(5){
+    background-image:url(משפחה/5.jpg);
+    width:21vw;
+}
+.family-collage :nth-child(6){
+    background-image:url(משפחה/6.jpg);
+    width:37vw;
+}
+.family-collage :nth-child(7){
+    background-image:url(משפחה/7.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(8){
+    background-image:url(משפחה/8.jpg);
+    width:35vw;
+}
+.family-collage :nth-child(9){
+    background-image:url(משפחה/9.jpg);
+    width:25vw;
+}
+.family-collage :nth-child(10){
+    background-image:url(משפחה/10.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(11){
+    background-image:url(משפחה/11.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(12){
+    background-image:url(משפחה/12.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(13){
+    background-image:url(משפחה/13.jpg);
+    width:25vw;
+}
+.family-collage :nth-child(14){
+    background-image:url(משפחה/14.jpg);
+    width:36vw;
+}
+.family-collage :nth-child(15){
+    background-image:url(משפחה/15.jpg);
+    width:29vw;
+}
+.family-collage :nth-child(16){
+    background-image:url(משפחה/16.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(17){
+    background-image:url(משפחה/17.jpg);
+    width:32vw;
+}
+.family-collage :nth-child(18){
+    background-image:url(משפחה/18.jpg);
+    width:28vw;
+}
+.family-collage :nth-child(19){
+    background-image:url(משפחה/19.jpg);
+    width:28vw;
+}
+.family-collage :nth-child(20){
+    background-image:url(משפחה/20.jpg);
+    width:32vw;
+}
+.family-collage :nth-child(21){
+    background-image:url(משפחה/21.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(22){
+    background-image:url(משפחה/22.jpg);
+    width:16vw;
+}
+.family-collage :nth-child(23){
+    background-image:url(משפחה/23.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(24){
+    background-image:url(משפחה/24.jpg);
+    width:44vw;
+}
+.family-collage :nth-child(25){
+    background-image:url(משפחה/25.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(26){
+    background-image:url(משפחה/26.jpg);
+    width:36vw;
+}
+.family-collage :nth-child(27){
+    background-image:url(משפחה/27.jpg);
+    width:24vw;
+}
+.family-collage :nth-child(28){
+    background-image:url(משפחה/28.jpg);
+    width:25vw;
+}
+.family-collage :nth-child(29){
+    background-image:url(משפחה/29.jpg);
+    width:35vw;
+}
+.family-collage :nth-child(30){
+    background-image:url(משפחה/30.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(31){
+    background-image:url(משפחה/31.jpg);
+    width:17vw;
+}
+.family-collage :nth-child(32){
+    background-image:url(משפחה/32.jpg);
+    width:36vw;
+}
+.family-collage :nth-child(33){
+    background-image:url(משפחה/33.jpg);
+    width:15vw;
+}
+.family-collage :nth-child(34){
+    background-image:url(משפחה/34.jpg);
+    width:21vw;
+}
+.family-collage :nth-child(35){
+    background-image:url(משפחה/35.jpg);
+    width:32vw;
+}
+.family-collage :nth-child(36){
+    background-image:url(משפחה/36.jpg);
+    width:32vw;
+}
+.family-collage :nth-child(37){
+    background-image:url(משפחה/37.jpg);
+    width:26vw;
+}
+.family-collage :nth-child(38){
+    background-image:url(משפחה/38.jpg);
+    width:30vw;
+}
+.family-collage :nth-child(39){
+    background-image:url(משפחה/39.jpg);
+    width:32vw;
+}
+.family-collage :nth-child(40){
+    background-image:url(משפחה/40.jpg);
+    width:28vw;
+}
+/*חלאקה----------------------------------------------------------------------------------------------------*/
+.chalake-collage :nth-child(1){
+    background-image:url(חלאקה/1.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(2){
+    background-image:url(חלאקה/2.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(3){
+    background-image:url(חלאקה/3.JPG);
+    width:28vw;
+}
+.chalake-collage :nth-child(4){
+    background-image:url(חלאקה/4.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(5){
+    background-image:url(חלאקה/5.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(6){
+    background-image:url(חלאקה/6.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(7){
+    background-image:url(חלאקה/7.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(8){
+    background-image:url(חלאקה/8.JPG);
+    width:31vw;
+}
+.chalake-collage :nth-child(9){
+    background-image:url(חלאקה/9.JPG);
+    width:27vw;
+}
+.chalake-collage :nth-child(10){
+    background-image:url(חלאקה/10.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(11){
+    background-image:url(חלאקה/11.JPG);
+    width:27vw;
+}
+.chalake-collage :nth-child(12){
+    background-image:url(חלאקה/12.JPG);
+    width:31vw;
+}
+.chalake-collage :nth-child(13){
+    background-image:url(חלאקה/13.JPG);
+    width:31vw;
+}
+.chalake-collage :nth-child(14){
+    background-image:url(חלאקה/14.jpg);
+    width:34vw;
+}
+.chalake-collage :nth-child(15){
+    background-image:url(חלאקה/15.JPG);
+    width:25vw;
+}
+.chalake-collage :nth-child(16){
+    background-image:url(חלאקה/16.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(17){
+    background-image:url(חלאקה/17.JPG);
+    width:28vw;
+}
+.chalake-collage :nth-child(18){
+    background-image:url(חלאקה/18.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(19){
+    background-image:url(חלאקה/19.JPG);
+    width:33vw;
+}
+.chalake-collage :nth-child(20){
+    background-image:url(חלאקה/20.JPG);
+    width:29vw;
+}
+.chalake-collage :nth-child(21){
+    background-image:url(חלאקה/21.JPG);
+    width:28vw;
+}
+.chalake-collage :nth-child(22){
+    background-image:url(חלאקה/22.JPG);
+    width:16vw;
+}
+.chalake-collage :nth-child(23){
+    background-image:url(חלאקה/23.JPG);
+    width:15vw;
+}
+.chalake-collage :nth-child(24){
+    background-image:url(חלאקה/24.JPG);
+    width:26vw;
+}
+.chalake-collage :nth-child(25){
+    background-image:url(חלאקה/25.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(26){
+    background-image:url(חלאקה/26.JPG);
+    width:31vw;
+}
+.chalake-collage :nth-child(27){
+    background-image:url(חלאקה/27.JPG);
+    width:28vw;
+}
+.chalake-collage :nth-child(28){
+    background-image:url(חלאקה/28.JPG);
+    width:31vw;
+}
+.chalake-collage :nth-child(29){
+    background-image:url(חלאקה/29.JPG);
+    width:28vw;
+}
+.chalake-collage :nth-child(30){
+    background-image:url(חלאקה/30.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(31){
+    background-image:url(חלאקה/31.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(32){
+    background-image: url(חלאקה/32.jpg);
+    width: 30vw;
+}
+.chalake-collage :nth-child(33){
+    background-image:url(חלאקה/33.JPG);
+    width:29vw;
+}
+.chalake-collage :nth-child(34){
+    background-image:url(חלאקה/34.JPG);
+    width:31vw;
+}
+.chalake-collage :nth-child(35){
+    background-image:url(חלאקה/35.JPG);
+    width:35vw;
+}
+.chalake-collage :nth-child(36){
+    background-image:url(חלאקה/36.JPG);
+    width:16vw;
+}
+.chalake-collage :nth-child(37){
+    background-image:url(חלאקה/37.JPG);
+    width:19vw;
+}
+.chalake-collage :nth-child(38){
+    background-image:url(חלאקה/38.JPG);
+    width:19vw;
+}
+.chalake-collage :nth-child(39){
+    background-image:url(חלאקה/39.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(40){
+    background-image:url(חלאקה/40.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(41){
+    background-image:url(חלאקה/41.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(42){
+    background-image:url(חלאקה/42.JPG);
+    width:26vw;
+}
+.chalake-collage :nth-child(43){
+    background-image:url(חלאקה/43.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(44){
+    background-image:url(חלאקה/44.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(45){
+    background-image:url(חלאקה/45.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(46){
+    background-image:url(חלאקה/46.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(47){
+    background-image:url(חלאקה/47.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(48){
+    background-image:url(חלאקה/48.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(49){
+    background-image:url(חלאקה/49.JPG);
+    width:15vw;
+}
+.chalake-collage :nth-child(50){
+    background-image:url(חלאקה/50.JPG);
+    width:16vw;
+}
+.chalake-collage :nth-child(51){
+    background-image:url(חלאקה/51.JPG);
+    width:28vw;
+}
+.chalake-collage :nth-child(52){
+    background-image:url(חלאקה/52.JPG);
+    width:34vw;
+}
+.chalake-collage :nth-child(53){
+    background-image:url(חלאקה/53.JPG);
+    width:15vw;
+}
+.chalake-collage :nth-child(54){
+    background-image:url(חלאקה/54.JPG);
+    width:17vw;
+}
+.chalake-collage :nth-child(55){
+    background-image:url(חלאקה/55.JPG);
+    width:23vw;
+}
+.chalake-collage :nth-child(56){
+    background-image:url(חלאקה/56.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(57){
+    background-image:url(חלאקה/57.JPG);
+    width:28vw;
+}
+.chalake-collage :nth-child(58){
+    background-image:url(חלאקה/58.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(59){
+    background-image:url(חלאקה/59.JPG);
+    width:27vw;
+}
+.chalake-collage :nth-child(60){
+    background-image:url(חלאקה/60.JPG);
+    width:33vw;
+}
+.chalake-collage :nth-child(61){
+    background-image:url(חלאקה/61.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(62){
+    background-image:url(חלאקה/62.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(63){
+    background-image:url(חלאקה/63.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(64){
+    background-image:url(חלאקה/64.JPG);
+    width:28vw;
+}
+.chalake-collage :nth-child(65){
+    background-image:url(חלאקה/65.JPG);
+    width:28vw;
+}
+.chalake-collage :nth-child(66){
+    background-image:url(חלאקה/66.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(67){
+    background-image:url(חלאקה/67.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(68){
+    background-image:url(חלאקה/68.JPG);
+    width:33vw;
+}
+.chalake-collage :nth-child(69){
+    background-image:url(חלאקה/69.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(70){
+    background-image:url(חלאקה/70.JPG);
+    width:27vw;
+}
+.chalake-collage :nth-child(71){
+    background-image:url(חלאקה/71.JPG);
+    width:25vw;
+}
+.chalake-collage :nth-child(72){
+    background-image:url(חלאקה/72.JPG);
+    width:17vw;
+}
+.chalake-collage :nth-child(73){
+    background-image:url(חלאקה/73.JPG);
+    width:17vw;
+}
+.chalake-collage :nth-child(74){
+    background-image:url(חלאקה/74.JPG);
+    width:30vw;
+}
+.chalake-collage :nth-child(75){
+    background-image:url(חלאקה/75.JPG);
+    width:31vw;
+}
+.chalake-collage :nth-child(76){
+    background-image:url(חלאקה/76.JPG);
+    width:32vw;
+}
+.chalake-collage :nth-child(77){
+    background-image:url(חלאקה/77.JPG);
+    width:27vw;
+}
+/*עיבוד תמונות--------------------------------------------------------------------------------------------*/
+.processing-header{
+    height: 80vh;
+    background: url("header/processoring.jpg") fixed;
+}
+.container-processed{
+    padding-top: 10vh;
+    display: grid;
+    grid-auto-rows: 95vh;
+    justify-content: center;
+    background-color: rgb(230, 230, 233);
+}
+.container-processed span{
+    width: 65vw;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+.button{
+    width: 100px;
+    height: 40px;
+    font-family:  'special-font';
+    font-size: 20px;
+    border-radius: 3px;
+    margin: 3vw;
+}
+.main-button{
+    background-color:rgb(0, 168, 180) ;
+    color: white;
+    border: none;
+    margin-top: 1.5vw;
+    text-decoration: none;
+}
+.defult-button{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 2px gray;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.container-processed span:hover .defult-button{
+    background-color:rgb(0, 168, 180) ;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.defult-button:hover,.main-button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:rgb(211, 84, 101);
+}
+.container-processed span:hover .main-button{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 2px gray;
+    color: black;
+}
+.container-processed> :nth-child(1){
+    background-image: url(עיבודים/1.jpg);
+}
+.container-processed> :nth-child(1):hover{
+    background-image: url(עיבודים/1\(1\).JPG);
+}
+.container-processed> :nth-child(2){
+    background-image: url(עיבודים/2.jpg);
+}
+.container-processed> :nth-child(2):hover{
+    background-image: url(עיבודים/2\(1\).JPG);
+}
+.container-processed> :nth-child(3){
+    background-image: url(עיבודים/3.jpg);
+}
+.container-processed> :nth-child(3):hover{
+    background-image: url(עיבודים/3\(1\).JPG);
+}
+.container-processed> :nth-child(4){
+    background-image: url(עיבודים/4.jpg);
+}
+.container-processed> :nth-child(4):hover{
+    background-image: url(עיבודים/4\(1\).JPG);
+}
+.container-processed> :nth-child(5){
+    background-image: url(עיבודים/5.jpg);
+}
+.container-processed> :nth-child(5):hover{
+    background-image: url(עיבודים/5\(1\).JPG);
+}
+.container-processed> :nth-child(6){
+    background-image: url(עיבודים/6.jpg);
+}
+.container-processed> :nth-child(6):hover{
+    background-image: url(עיבודים/6\(1\).JPG);
+}
+.container-processed> :nth-child(7){
+    background-image: url(עיבודים/7.jpg);
+}
+.container-processed> :nth-child(7):hover{
+    background-image: url(עיבודים/7\(1\).JPG);
+}
+.container-processed> :nth-child(8){
+    background-image: url(עיבודים/8.jpg);
+}
+.container-processed> :nth-child(8):hover{
+    background-image: url(עיבודים/8\(1\).JPG);
+}
+.container-processed> :nth-child(9){
+    background-image: url(עיבודים/9.jpg);
+}
+.container-processed> :nth-child(9):hover{
+    background-image: url(עיבודים/9\(1\).JPG);
+}
+.container-processed> :nth-child(10){
+    background-image: url(עיבודים/10.jpg);
+}
+.container-processed> :nth-child(10):hover{
+    background-image: url(עיבודים/10\(1\).JPG);
+}
+.container-processed> :nth-child(11){
+    background-image: url(עיבודים/11.jpg);
+}
+.container-processed> :nth-child(11):hover{
+    background-image: url(עיבודים/11\(1\).JPG);
+}
+.container-processed> :nth-child(12){
+    background-image: url(עיבודים/12.jpg);
+}
+.container-processed> :nth-child(12):hover{
+    background-image: url(עיבודים/12\(1\).JPG);
+}
+.container-processed> :nth-child(13){
+    background-image: url(עיבודים/13.jpg);
+}
+.container-processed> :nth-child(13):hover{
+    background-image: url(עיבודים/13\(1\).JPG);
+}
+.container-processed> :nth-child(14){
+    background-image: url(עיבודים/14.jpg);
+}
+.container-processed> :nth-child(14):hover{
+    background-image: url(עיבודים/14\(1\).JPG);
+}
+.container-processed> :nth-child(15){
+    background-image: url(עיבודים/15.jpg);
+}
+.container-processed> :nth-child(15):hover{
+    background-image: url(עיבודים/15\(1\).JPG);
+}
+.container-processed> :nth-child(16){
+    background-image: url(עיבודים/16.jpg);
+}
+.container-processed> :nth-child(16):hover{
+    background-image: url(עיבודים/16\(1\).JPG);
+}
+.container-processed> :nth-child(17){
+    background-image: url(עיבודים/17.jpg);
+}
+.container-processed> :nth-child(17):hover{
+    background-image: url(עיבודים/17\(1\).JPG);
+}
+.container-processed> :nth-child(18){
+    background-image: url(עיבודים/18.jpg);
+}
+.container-processed> :nth-child(18):hover{
+    background-image: url(עיבודים/18\(1\).JPG);
+}
+.container-processed> :nth-child(19){
+    background-image: url(עיבודים/19.jpg);
+}
+.container-processed> :nth-child(19):hover{
+    background-image: url(עיבודים/19\(1\).JPG);
+}
+.container-processed> :nth-child(20){
+    background-image: url(עיבודים/20.jpg);
+}
+.container-processed> :nth-child(20):hover{
+    background-image: url(עיבודים/20\(1\).JPG);
+}
+.container-processed> :nth-child(21){
+    background-image: url(עיבודים/21.jpg);
+}
+.container-processed> :nth-child(21):hover{
+    background-image: url(עיבודים/21\(1\).JPG);
+}
+.container-processed> :nth-child(22){
+    background-image: url(עיבודים/22.jpg);
+}
+.container-processed> :nth-child(22):hover{
+    background-image: url(עיבודים/22\(1\).JPG);
+}
+.container-processed> :nth-child(23){
+    background-image: url(עיבודים/23.jpg);
+}
+.container-processed> :nth-child(23):hover{
+    background-image: url(עיבודים/23\(1\).JPG);
+}
+/*קורס צילום--------------------------------------------------------------------------------------------*/
+.course-header{
+    background: url("header/course.jpg") fixed;
+    height: 80vh;
+}
+.course-conteiner p{
+    direction: rtl;
+    font-family: 'regular-font';
+    font-size: 25px;
+    line-height: 1.8;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.course-conteiner h6{
+    direction: rtl;
+    font-family: 'regular-font';
+    font-size: 33px;
+    color:rgb(0, 168, 180) ;
+    margin-bottom: 15px;
+}
+.course-conteiner{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: rgb(230, 230, 233);
+    color: rgb(81, 81, 81);
+    display: flex;
+    flex-direction: column;
+}
+.course-conteiner img{
+    width: 50vw;
+    margin: 3vw;
+}
+.course-conteiner a, .course-conteiner img{
+    align-self: center;
+}
+.big-a{
+    width: 27vw;
+    font-family:  'special-font';
+    font-size: 30px;
+    border-radius: 4px;
+    margin: 3vw;
+    padding: 1.5vw;
+    text-align: center;
+    direction: rtl;
+}
+.sign h6{
+    margin-top: 15px;
+    color: rgb(211, 84, 101);
+}
+.sign{
+    text-align: center;
+}
+.sign p{
+    margin-bottom: 0;
+}
+.course-joining{
+    height: 50vh;
+    background-color: white;
+    display: none;
+}
+/*עיצוב אלבומים-------------------------------------------------------------------------------------*/
+.album-header{
+    background: url("header/album.jpg") fixed;
+    height: 80vh;
+}
+.album-conteiner img{
+    width: 90vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.collage-design img{
+    width: 60vw;
+}
+.album-conteiner{
+    text-align: center;
+    background-color:rgb(230, 230, 233);
+}
+/*צור קשר--------------------------------------------------------------------------------------*/
+.contact-header{
+    background: url(header/contact.jpg) fixed;
+    height: 80vh;
+}
+.contact-conteiner{
+    direction: rtl;
+    text-align: right;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    color: rgb(81, 81, 81);
+    align-content: center;
+}
+.contact-conteiner h3{
+    font-size: 70px;
+    color: rgb(0, 168, 180) ;
+    margin: 13vw;
+    margin-right: 0;
+    font-weight:lighter;
+    margin-bottom: 1vw;
+}
+.contact-conteiner> :nth-child(2){
+    margin-top: 0;
+    font-size: 50px;
+    margin-bottom: 8vw;
+}
+.contact-conteiner h2{
+    font-size: 29px;
+    color: rgb(211, 84, 101);
+}
+.contact-conteiner ul{
+    list-style: none;
+    padding: 0;
+}
+.contact-conteiner p{
+    margin: 0.5em;
+    margin-right: 30px;
+    font-size: 25px;
+}
+form#contact-form input[type=text], form#contact-form input[type=email] , form#contact-form textarea {
+    width: 30vw;
+    padding: 12px 20px;
+    margin: 15px;
+    border: none;
+    border-bottom: 3px solid rgb(0, 168, 180);
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: 'regular-font';
+}
+form#contact-form input[type=submit]{
+    position: relative;
+    scale: 1.3;
+    border-radius: 2px;
+    transform-origin: 50% 5em;
+}
+form#contact-form input[type=submit]:hover{
+    animation: rotate 1.5s linear infinite;
+}
+form#contact-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13vw;
+}
+form#contact-form textarea{
+    height: 100px;
+    margin-bottom:5vh ;
+}
+.registration-conteiner :nth-child(2){
+    margin-left: 8vw;
+    margin-bottom: 0;
+}
+.registration-conteiner :nth-child(3){
+    margin-right: 0;
+    margin-bottom: 5vw;
+}
+@media screen and (max-width:1200px) {
+    nav a{
+        font-size: 20px;
+    }
+    nav img{
+        height: 60px;
+    }
+    .button{
+        width: 80px;
+        height: 30px;
+        font-size: 17px;
+    }
+    nav a{
+        padding-right: 0.5vw;
+        padding-left: 0.5vw;
+    }
+    footer img{
+        margin: 1vw;
+        height: 80px;
+        margin-left: 5vw;
+    }
+    footer :nth-child(1){
+        margin-right: 6vw;
+        font-size: 19px;
+    }
+    footer p{
+        font-size: 22px;
+    }
+    footer :nth-child(2){
+        font-size: 22px;
+        margin-right: 5vw;
+        width: 30vw;
+        position: sticky;
+    }
+    footer{
+        height: 200px;
+    }
+    .gallery-details{
+        height: 200px;
+    }
+    .gallery-details h3{
+        margin-right: 15vw;
+        padding-top: 110px;
+    }
+}
+@media screen and (max-width:900px) {
+    .regular-nav{
+        width: 70vw;
+        font-size: 10px;
+    }
+    .contact-conteiner h3{
+        font-size: 50px;
+    }
+    .contact-conteiner :nth-child(2) {
+        font-size: 30px;
+    }
+    .contact-conteiner h2{
+        font-size: 20px;
+    }
+    .contact-conteiner p {
+        font-size: 20px;
+    }
+    form#contact-form input[type=text], form#contact-form input[type=email], form#contact-form textarea {
+        margin: 0;
+    }
+    form#contact-form button{
+        margin-top: 7vh;
+    }
+    footer img{
+        height: 70px;
+    }
+    footer p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:600px) {
+    .container-processed span{
+        width: 100vw;
+        height: 45vh;
+    }
+    .button{
+        margin: 5vw;
+    }
+    span .main-button{
+        margin-top: 0;
+    }
+    .defult-button{
+        margin-bottom: 3vw;
+    }
+    .container-processed{
+        grid-auto-rows: 65vh;
+    }
+    .home-header>*{
+        scale: 1.94;
+        top: 30vw;
+    }
+    .home-header{
+        height: 123vw;
+    }
+    .baby{
+        background-position:-20vw !important;
+    }
+    .course-conteiner p{
+        font-size: 20px;
+        margin: 0;
+    }
+    .course-conteiner h6{
+        font-size: 22px;
+    }
+    .course-conteiner img {
+        width: 70vw;
+        margin-top: 5vw;
+    }
+    .big-a{
+        font-size: 23px;
+        width: 50vw;
+    }
+    .collage{
+        flex-direction: column;
+        align-items: center;
+    }
+    .collage span{
+        width: 90vw !important;
+    }
+    .collage span:hover{
+        animation: small-grow 1s ease-out;
+        background-size: 200%;
+    }
+    .height-img{
+        height: 65vh !important;
+    }
+    .regular-nav{
+        display: none;
+    }
+    .small-nav{
+        display: inline;
+    }
+    footer{
+        height: 600px;
+        align-items: center;
+    }
+    footer :nth-child(1){
+        margin-bottom: 5vw;
+        font-size: 22px;
+    }
+    footer p {
+        font-size: 22px;
+    }
+    footer p br{
+        display: none;
+    }
+    footer :nth-child(2){
+        width: 70vw;
+        font-size: 25px;
+        padding: 5vw;
+    }
+    footer .phone{
+        margin-top: 10vw;
+        padding-left: 95px;
+    }
+    footer .email{
+        padding-right: 30px;
+        margin-bottom: 7vw;
+    }
+    footer img{
+        width: 40vw;
+        height: auto;
+    }
+    .contact-conteiner{
+        flex-wrap: nowrap;
+        align-items: center;
+        min-height: 970px;
+    }
+    .contact-conteiner h3{
+        margin-left: 0;
+        font-size: 60px;
+    }
+    .contact-conteiner h2{
+        font-size: 25px;
+    }
+    .contact-conteiner p{
+        margin-right: 50px;
+        font-size: 20px;
+    }
+    .contact-conteiner :nth-child(2) {
+        margin-bottom: 5vw;
+        font-size: 45px;
+        margin-left: 0;
+    }
+    .registration-conteiner :nth-child(2){
+        margin-bottom: 0;
+    }
+    .contact-conteiner .phone{
+        margin-left: 130px;
+    }
+    form#contact-form{
+        align-items: center;
+    }
+    form#contact-form input[type=text], form#contact-form input[type=email], form#contact-form textarea {
+        width: 70vw;
+        margin: 15px;
+    }
+    form#contact-form button{
+        margin-bottom: 0;
+        scale: 1.6;
+        align-self: center;
+    }
+    .details{
+        text-align: center;
+    }
+    .details h3{
+        margin-right: 0;
+        font-size: 40px;
+    }
+    .page-name :nth-child(2) {
+        margin-right: 20vw;
+    }
+    .page-name h3{
+        font-size: 45px;
+        margin-right: 10vw;
+    }
+    .gallery-conteiner{
+        grid-template-rows: none;
+        grid-auto-rows: 40vh;
+        grid-template-columns: 1fr 80vw 1fr;
+        height: fit-content;
+        padding-bottom: 10vw;
+    }
+    .gallery-conteiner>*{
+        grid-row: auto !important;
+        grid-column: 2 !important;
+    }
+    .gallery-conteiner> :nth-child(1){
+        grid-row: 2 !important;
+    }
+    .home-main{
+        padding: 10vh;
+        height: 80vh;
+    }
+    .home-main img{
+        width: 70vw;
+        animation: small-run 4s infinite cubic-bezier(0.32, 0.56, 0.64, 0.26);
+    }
+}
+@font-face{
+    font-family: 'special-font';
+    src:url(fonts/VarelaRound-Regular.ttf);
+}
+@font-face{
+    font-family: 'regular-font';
+    src: url(fonts/Assistant-Regular.ttf);
+}
+@keyframes merge{
+    0%{
+        opacity: 0;
+    }
+    8%{
+        opacity: 1;
+    }
+    12%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes top{
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 0%;
+    }
+}
+@keyframes rotate{
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    20% {
+        transform: rotateZ(-15deg);
+    }
+    30% {
+        transform: rotateZ(10deg);
+    }
+    40% {
+        transform: rotateZ(-10deg);
+    }
+    50% {
+        transform: rotateZ(6deg);
+    }
+    60% {
+        transform: rotateZ(-4deg);
+    }
+    70%, 100% {
+        transform: rotateZ(0);
+    }
+}
+@keyframes right{
+    0%{
+        right: -100%;
+        opacity: 0;
+    }
+    100%{
+        right: 0;
+        opacity: 1;
+    }
+}
+@keyframes run{
+    0%{
+        left: -30vw;
+        opacity: 0.3;
+    }
+    100%{
+        left: 100vw;
+        opacity: 1;
+    }
+}
+@keyframes small-run{
+    0%{
+        left: -70vw;
+        opacity: 0.3;
+    }
+    100%{
+        left: 100vw;
+        opacity: 1;
+    }
+}
+@keyframes grow{
+    0%{
+        background-size: 105%;
+    }
+    100%{
+        background-size: 120%;
+    }
+}
+@keyframes small-grow{
+    0%{
+        background-size: 160%;
+    }
+    100%{
+        background-size: 200%;
+    }
+}
